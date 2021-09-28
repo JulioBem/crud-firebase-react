@@ -17,7 +17,7 @@ Clone this repo and then in terminal run ```npm install``` to install the depend
 
 ## Author
 
-Júlio Bem
+- [Júlio Bem](https://github.com/juliobem)
 
 ## Screenshot
 
