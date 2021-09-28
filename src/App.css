@@ -6,10 +6,6 @@
   margin-top: 20px;
 }
 
-p {
-  font-size: 1rem;
-}
-
 form {
   width: 35vw;
   max-width: 800px;
@@ -19,29 +15,36 @@ form {
   margin-top: 50px;
   border-radius: 5px;
 }
+
 form h3 {
   text-align: center;
 }
+
 form input {
   width: 100%;
   padding: 10px 5px;
   outline: none;
 }
+
 .forms_container {
   display: flex;
   flex-direction: column;
 }
+
 .forms_container img {
   width: 50%;
   margin: 0 auto;
 }
+
 .input_container {
   margin-bottom: 20px;
 }
+
 .btn_container {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .btn_container button {
   background: var(--amber);
   color: white;
@@ -53,6 +56,7 @@ form input {
   cursor: pointer;
   transition: all 0.2s;
 }
+
 .btn_container button:hover{
   filter: brightness(1.05);
   font-weight: bolder;
@@ -66,6 +70,7 @@ form input {
   grid-template-columns: 1fr;
   gap: 5px;
 }
+
 .product {
   width: 30vw;
   min-width: 350px;
@@ -79,12 +84,15 @@ form input {
   justify-content: space-between;
   align-items: center;
 }
+
 .product p {
   cursor: pointer;
 }
+
 .product_content {
   color: black;
 }
+
 .product_content:nth-child(2){
   color: green;
 }
@@ -173,6 +181,7 @@ footer h1 {
     width: 100%;
     max-width: 800px;
   }
+
   .product {
     min-width: 43.33vw;
     width: 100%;
@@ -180,6 +189,7 @@ footer h1 {
     flex-direction: column;
     max-height: none;
   }
+
   .product p {
     font-size: 1.1rem;
   }

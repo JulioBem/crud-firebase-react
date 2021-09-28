@@ -17,6 +17,7 @@ import imglogo from './assets/products_img.png'
 const App = () => {
   const [products, setProducts] = useState([]);
 
+  //Filter data from database so it looks clean
   useEffect(() => {
     const q = query(collection(db, "products"));
     const unsub = onSnapshot(q, (querySnapshot) => {
@@ -29,14 +30,17 @@ const App = () => {
     return () => unsub();
   }, []);
 
-  const toggleComplete = async (product) => {
+  //Change bought state
+  const toggleBought = async (product) => {
     await updateDoc(doc(db, "products", product.id), { bought: !product.bought });
   };
 
+  //Delete data
   const handleDelete = async (id) => {
     await deleteDoc(doc(db, "products", id));
   };
 
+  //Search state
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
@@ -65,7 +69,7 @@ const App = () => {
           <Product
             key={product.id}
             product={product}
-            toggleComplete={toggleComplete}
+            toggleBought={toggleBought}
             handleDelete={handleDelete}
           />
         ))}

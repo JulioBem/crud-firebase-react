@@ -7,6 +7,7 @@ const AddProduct = () => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
 
+  //Set title and price through info given by inputs
   const handleSubmit = async (e) => {
     e.preventDefault();
     await addDoc(collection(db, "products"), {

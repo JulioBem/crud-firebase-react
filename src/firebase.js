@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { } from 'firebase/storage';
 
-// Your web app's Firebase configuration
+// Web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCXvuJ2rNlsJfm5U5KizHLdsU1FQUWP3Y4",
   authDomain: "desafio-alest-c9985.firebaseapp.com",

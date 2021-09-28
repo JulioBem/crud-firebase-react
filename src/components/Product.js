@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product = ({ product, toggleComplete, handleDelete }) => {
+const Product = ({ product, toggleBought, handleDelete }) => {
   return (
     <div className="product">
       <p
@@ -17,7 +17,7 @@ const Product = ({ product, toggleComplete, handleDelete }) => {
       </p>
 
       <div className="actn_Container">
-        <button onClick={() => toggleComplete(product)}>Buy</button>
+        <button onClick={() => toggleBought(product)}>Buy</button>
         <button onClick={() => handleDelete(product.id)}>X</button>
       </div>
     </div>
