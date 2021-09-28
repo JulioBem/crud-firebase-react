@@ -4,7 +4,7 @@ An application that has a frontend (user interface) that allows you to create, r
 
 ## Run the app
 
-Clone this repo and then in terminal run ```**npm install**``` to install the dependencies of the project.
+Clone this repo and then in terminal run ```npm install``` to install the dependencies of the project.
 
 ## Tecnologies Used
 
